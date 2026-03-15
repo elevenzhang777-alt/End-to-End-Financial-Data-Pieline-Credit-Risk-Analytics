@@ -1,0 +1,7 @@
+OrderID,CustomerName,Amount,OrderDate,Region,Risk_Level
+1001,Woolworths,1200.5,2025-01-15,QLD,Normal
+1002,Coles,2000.0,2025-01-16,NSW,Normal
+1003,ALDI,450.0,,VIC,Normal
+1004,,3200.0,2025-01-18,QLD,High Risk
+1005,Myer,-500.0,2025-01-19,WA,Normal
+1006,Target,890.0,2025-01-20,QLD,Normal
