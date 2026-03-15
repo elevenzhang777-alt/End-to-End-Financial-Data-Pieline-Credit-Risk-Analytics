@@ -1,0 +1,17 @@
+/* Project: End-to-End Financial Data Pipeline
+Phase 1: Data Extraction
+Objective: Retrieve raw sales transaction records for the QLD region.
+*/
+
+-- Selecting key financial columns for audit and risk analysis
+SELECT 
+    OrderID, 
+    CustomerName, 
+    Amount, 
+    OrderDate,
+    Region,
+    PaymentStatus
+FROM Sales_Master_Database
+WHERE Region = 'QLD' 
+  AND OrderDate >= '2025-01-01'
+  AND OrderStatus != 'Voided'; -- Exclude voided transactions to maintain data quality
